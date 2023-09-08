@@ -12,10 +12,10 @@ const App = () => {
         <h1>Our Menu</h1> 
        
         <div className="category-field">
-            <p onClick={()=>setFilteredItems(data)}>All</p>
-            <p onClick={()=>setFilteredItems(data.filter(e=>e.category==='breakfast'))}>Breakfast</p>
-            <p onClick={()=>setFilteredItems(data.filter(e=>e.category==='lunch'))}>Lunch</p>
-            <p onClick={()=>setFilteredItems(data.filter(e=>e.category==='shakes'))}>Shakes</p>
+            <button id='main' onClick={()=>setFilteredItems(data)}>All</button>
+            <button id='filter-btn-1' onClick={()=>setFilteredItems(data.filter(e=>e.category==='breakfast'))}>Breakfast</button>
+            <button id='filter-btn-2' onClick={()=>setFilteredItems(data.filter(e=>e.category==='lunch'))}>Lunch</button>
+            <button id='filter-btn-3' onClick={()=>setFilteredItems(data.filter(e=>e.category==='shakes'))}>Shakes</button>
         </div>
         <div className="items-container">
             {

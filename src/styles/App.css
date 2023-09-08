@@ -35,13 +35,15 @@ button{
     display: flex;
     justify-content: center;
     column-gap: 3rem;
-    color: #c59d5f;
+    
     margin-bottom: 2rem;
 }
-.category-field>p{
+.category-field>button{
     cursor: pointer;
     font-size: 18px;
-    
+    color: #c59d5f;
+    border: none;
+    background-color: #fff;
 }
 .items-container{
     display: grid;
